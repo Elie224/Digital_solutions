@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez l'équipe passionnée de Digital Solutions, experts en transformation numérique.">
+    <title>Notre équipe | Digital Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+      .org-chart-container { max-width: 900px; margin: 2rem auto 3rem auto; background: var(--light); border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.07); padding: 2rem; }
+      .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2.5rem; justify-items: center; margin-top: 2rem; }
+      .team-member-card { background: var(--white); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 2rem 1.2rem 1.2rem 1.2rem; text-align: center; transition: box-shadow 0.2s, transform 0.2s; }
+      .team-member-card:hover { box-shadow: 0 6px 24px rgba(37,99,235,0.13); transform: translateY(-4px) scale(1.03); }
+      .team-photo { width: 90px; height: 90px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 3px solid var(--primary); background: var(--gray-light); }
+      .team-role { color: var(--primary); font-weight: 600; font-size: 1rem; margin-bottom: 0.5rem; display: block; }
+      .team-socials { margin-top: 0.7rem; display: flex; justify-content: center; gap: 0.7rem; }
+      .team-socials a { color: var(--gray); font-size: 1.2rem; transition: color 0.2s; }
+      .team-socials a:hover { color: var(--primary); }
+      @media (max-width: 600px) { .team-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Accueil Digital Solutions">
+                <img src="Logo.jpeg" alt="Digital Solutions Logo">
+                <span style="font-size:2rem;font-weight:700;font-family:Poppins,Arial,sans-serif;letter-spacing:1px;text-shadow:0 2px 8px rgba(37,99,235,0.08);line-height:1;margin:0;padding:0;">
+                  <span style="color:#222 !important;">Digital</span> <span style="color:#2563EB !important;">Solutions</span>
+                </span>
+            </a>
+            <nav class="navbar" role="navigation" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Accueil</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                    <li><a href="partenaires.html">Partenaires</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">Devis gratuit</a>
+                </div>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero service-hero fade-in">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="service-icon-large"><i class="fas fa-users"></i></span>
+                    <h1>Notre équipe</h1>
+                    <p class="hero-subtitle">Une équipe passionnée, experte et engagée pour la réussite de votre transformation digitale.</p>
+                </div>
+            </div>
+        </section>
+        <section class="about-team fade-in">
+            <div class="container">
+                <h2>Notre équipe dirigeante</h2>
+                <div class="team-hierarchy">
+                    <!-- Niveau 1 -->
+                    <div class="team-row team-row-1">
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-crown" style="font-size:4rem;color:#FFD700;"></i></span>
+                            <h3>Elisée Kourouma</h3>
+                            <span class="team-role">CEO & Fondateur</span>
+                            <p>Mathématicien informaticien, Elisée pilote la vision de la startup et se spécialise dans l'intelligence artificielle.</p>
+                            <div class="team-socials">
+                                <a href="https://www.linkedin.com/in/nema-elis%C3%A9e-kourouma-b5a558242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Niveau 2 (3 membres) -->
+                    <div class="team-row team-row-2" style="gap:1.5rem;">
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Aïssata Diallo</h3>
+                            <span class="team-role">CTO</span>
+                            <p>Responsable technique, elle supervise tous les développements web et mobiles.</p>
+                            <div class="team-socials">
+                                <a href="https://linkedin.com/in/aissata-diallo" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.facebook.com/share/18wUY3nLes/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Fatoumata Bamba</h3>
+                            <span class="team-role">CMO</span>
+                            <p>Experte en communication et marketing digital, elle gère l’image de la startup.</p>
+                            <div class="team-socials">
+                                <a href="https://linkedin.com/in/fatoumata-bamba" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://facebook.com/fatoumata.bamba" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Amadou Diakité</h3>
+                            <span class="team-role">Responsable Vente & Achat Ordinateurs</span>
+                            <p>Spécialiste du matériel informatique, il conseille et accompagne les clients pour l'achat ou la vente d'ordinateurs.</p>
+                            <div class="team-socials">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Niveau 3 (3 membres) -->
+                    <div class="team-row team-row-3">
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Ibrahima Sylla</h3>
+                            <span class="team-role">Lead Dev Web</span>
+                            <p>Développeur fullstack, il conçoit des sites performants et sécurisés.</p>
+                            <div class="team-socials">
+                                <a href="https://linkedin.com/in/ibrahima-sylla" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://facebook.com/ibrahima.sylla" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Mamadou Bah</h3>
+                            <span class="team-role">Lead Dev Mobile</span>
+                            <p>Spécialiste des apps Android/iOS, il développe des solutions mobiles innovantes.</p>
+                            <div class="team-socials">
+                                <a href="https://linkedin.com/in/mamadou-bah" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://facebook.com/mamadou.bah" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Fatou Sissoko</h3>
+                            <span class="team-role">Responsable Réparation Ordinateurs</span>
+                            <p>Experte en maintenance, elle assure le diagnostic et la réparation rapide de tous types d'ordinateurs.</p>
+                            <div class="team-socials">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Niveau 4 (3 membres) -->
+                    <div class="team-row team-row-4">
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Marie Camara</h3>
+                            <span class="team-role">Lead Designer</span>
+                            <p>Créative et rigoureuse, elle imagine des interfaces et identités visuelles uniques.</p>
+                            <div class="team-socials">
+                                <a href="https://linkedin.com/in/marie-camara" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://facebook.com/marie.camara" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Oumar Barry</h3>
+                            <span class="team-role">Marketing Digital</span>
+                            <p>Il gère la stratégie d’acquisition et la présence sur les réseaux sociaux.</p>
+                            <div class="team-socials">
+                                <a href="https://linkedin.com/in/oumar-barry" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://facebook.com/oumar.barry" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Mohamed Camara</h3>
+                            <span class="team-role">Assistant Réparation Ordinateurs</span>
+                            <p>Il assiste le responsable dans toutes les opérations de réparation et de maintenance informatique.</p>
+                            <div class="team-socials">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Niveau 5 (3 membres) -->
+                    <div class="team-row team-row-5">
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Aminata Keita</h3>
+                            <span class="team-role">Support Client</span>
+                            <p>Elle accompagne les clients et assure un service après-vente réactif.</p>
+                            <div class="team-socials">
+                                <a href="https://linkedin.com/in/aminata-keita" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://facebook.com/aminata.keita" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Abdoulaye Diallo</h3>
+                            <span class="team-role">QA & Testeur</span>
+                            <p>Il garantit la qualité des livrables et la fiabilité des solutions déployées.</p>
+                            <div class="team-socials">
+                                <a href="https://linkedin.com/in/abdoulaye-diallo" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://facebook.com/abdoulaye.diallo" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member-card">
+                            <span class="team-photo"><i class="fas fa-user-circle" style="font-size:3.5rem;color:#2563EB;"></i></span>
+                            <h3>Salimatou Sow</h3>
+                            <span class="team-role">Data Analyst</span>
+                            <p>Elle analyse les données pour optimiser les performances des projets clients.</p>
+                            <div class="team-socials">
+                                <a href="https://linkedin.com/in/salimatou-sow" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://facebook.com/salimatou.sow" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center;margin-top:2rem;">
+                    <a href="index.html#footer" class="btn btn-primary">Contacter l'équipe</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>DigitalSolutions</h3>
+                    <p>Votre partenaire en transformation numérique. Des solutions sur mesure pour faire grandir votre entreprise.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html#services">Développement web</a></li>
+                        <li><a href="index.html#services">Applications mobiles</a></li>
+                        <li><a href="index.html#services">Design graphique</a></li>
+                        <li><a href="index.html#services">Solutions transport</a></li>
+                        <li><a href="index.html#services">Automatisation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +212 710898565</li>
+                        <li><i class="fas fa-envelope"></i> kouroumaelisee@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rue du Commerce, Conakry, Guinée</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Réseaux sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/tonentreprise" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/212710898565" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/Eliseekourouma" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://linkedin.com/company/tonentreprise" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/kouroumaelisee" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/excellencekourouma?igsh=bGdjY2cybjM4N2hi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyright-footer"></p>
+                <div class="footer-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Copyright dynamique
+        const copyright = document.getElementById('copyright-footer');
+        const year = new Date().getFullYear();
+        copyright.innerHTML = `© ${year} Digital Solutions. Tous droits réservés.`;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transformation numérique : audit, solutions digitales, formation, accompagnement pour entreprises.">
+    <title>Transformation numérique | Digital Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Accueil Digital Solutions">
+                <img src="Logo.jpeg" alt="Digital Solutions Logo">
+                <span style="font-size:2rem;font-weight:700;font-family:Poppins,Arial,sans-serif;letter-spacing:1px;text-shadow:0 2px 8px rgba(37,99,235,0.08);line-height:1;margin:0;padding:0;">
+                  <span style="color:#222 !important;">Digital</span> <span style="color:#2563EB !important;">Solutions</span>
+                </span>
+            </a>
+            <nav class="navbar" role="navigation" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Accueil</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="service-informatique.html">Informatique</a></li>
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="index.html#portfolio">Réalisations</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="partenaires.html">Partenaires</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">Devis gratuit</a>
+                </div>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero" style="padding:4rem 0 2rem;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Transformation numérique</h1>
+                    <p class="hero-subtitle">Audit, solutions digitales, formation et accompagnement pour la réussite de votre transition numérique.</p>
+                </div>
+            </div>
+        </section>
+        <section class="services-detail">
+            <div class="container">
+                <h2>Notre accompagnement</h2>
+                <ul>
+                    <li>Audit des pratiques et besoins</li>
+                    <li>Proposition de solutions digitales adaptées</li>
+                    <li>Formation aux outils numériques</li>
+                    <li>Accompagnement complet jusqu’à l’autonomie</li>
+                    <li>Support et suivi post-projet</li>
+                </ul>
+                <div style="margin-top:2rem;">
+                    <a href="devis.html" class="btn btn-primary">Demander un devis</a>
+                    <a href="index.html#services" class="btn btn-outline" style="margin-left:1rem;">Retour aux services</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>DigitalSolutions</h3>
+                    <p>Votre partenaire en transformation numérique. Des solutions sur mesure pour faire grandir votre entreprise.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html#services">Développement web</a></li>
+                        <li><a href="index.html#services">Applications mobiles</a></li>
+                        <li><a href="index.html#services">Design graphique</a></li>
+                        <li><a href="index.html#services">Solutions transport</a></li>
+                        <li><a href="index.html#services">Automatisation</a></li>
+                        <li><a href="service-informatique.html">Informatique</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +212 710898565</li>
+                        <li><i class="fas fa-envelope"></i> kouroumaelisee@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rue du Commerce, Conakry, Guinée</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Réseaux sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/18wUY3nLes/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/212710898565" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/Eliseekourouma" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://www.linkedin.com/in/nema-elis%C3%A9e-kourouma-b5a558242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/kouroumaelisee" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/excellencekourouma?igsh=bGdjY2cybjM4N2hi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyright-footer"></p>
+                <div class="footer-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Copyright dynamique
+        const copyright = document.getElementById('copyright-footer');
+        const year = new Date().getFullYear();
+        copyright.innerHTML = `© ${year} Digital Solutions. Tous droits réservés.`;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demandez un devis pour tous nos services : web, design, transport, automatisation, logistique, transformation digitale.">
+    <title>Demande de devis | Digital Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta property="og:title" content="Demande de devis – Digital Solutions">
+    <meta property="og:description" content="Obtenez un devis personnalisé pour votre projet digital en Guinée.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-site.com/devis.html">
+    <meta property="og:image" content="https://votre-site.com/image/IA.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Demande de devis – Digital Solutions">
+    <meta name="twitter:description" content="Obtenez un devis personnalisé pour votre projet digital en Guinée.">
+    <meta name="twitter:image" content="https://votre-site.com/image/IA.jpg">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Accueil Digital Solutions">
+                <img src="Logo.jpeg" alt="Digital Solutions Logo">
+                <span style="font-size:2rem;font-weight:700;font-family:Poppins,Arial,sans-serif;letter-spacing:1px;text-shadow:0 2px 8px rgba(37,99,235,0.08);line-height:1;margin:0;padding:0;">
+                  <span style="color:#222 !important;">Digital</span> <span style="color:#2563EB !important;">Solutions</span>
+                </span>
+            </a>
+            <nav class="navbar" role="navigation" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Accueil</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                    <li><a href="index.html#footer">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main id="main-content" role="main">
+        <section class="hero" style="padding:3rem 0 2rem;">
+            <div class="container">
+                <div class="hero-content" style="max-width:600px;margin:auto;text-align:center;">
+                    <h1>Demandez votre devis personnalisé</h1>
+                    <p class="hero-subtitle">Remplissez le formulaire ci-dessous pour recevoir une estimation rapide et gratuite pour le service de votre choix.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" style="padding-top:0;">
+            <div class="container" style="justify-content:center;">
+                <div class="contact-form" style="max-width:600px;margin:auto;">
+                    <form action="https://formspree.io/f/xqabrwbj" method="POST" id="devisForm" autocomplete="on" aria-label="Formulaire de demande de devis" enctype="multipart/form-data">
+                        <!-- Champ honeypot anti-spam (ne pas remplir) -->
+                        <div style="display:none;">
+                            <label for="website">Ne pas remplir ce champ</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Nom complet *</label>
+                            <input type="text" id="name" name="Nom complet" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+                            <input type="email" id="email" name="Email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Téléphone</label>
+                            <input type="tel" id="phone" name="Téléphone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service"><i class="fas fa-cogs"></i> Service souhaité *</label>
+                            <select id="service" name="Service souhaité" required>
+                                <option value="" disabled selected>Choisissez un service</option>
+                                <option value="mobile">Application mobile</option>
+                                <option value="automation">Automatisation</option>
+                                <option value="design">Design graphique</option>
+                                <option value="formation">Formation Trading & Crypto</option>
+                                <option value="informatique">Service informatique</option>
+                                <option value="web">Site web</option>
+                                <option value="logistics">Solutions logistiques</option>
+                                <option value="transport">Solutions transport</option>
+                                <option value="digital">Transformation numérique</option>
+                                <option value="voyage">Voyages & Séjours</option>
+                            </select>
+                            <div id="service-desc" style="margin-top:0.5rem;color:#2563EB;font-size:0.98rem;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="source"><i class="fas fa-question-circle"></i> Comment nous avez-vous connu ?</label>
+                            <select id="source" name="Source">
+                                <option value="" disabled selected>Choisissez une option</option>
+                                <option value="google">Google</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="bouche">Bouche-à-oreille</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget"><i class="fas fa-euro-sign"></i> Budget estimé (€)</label>
+                            <input type="number" id="budget" name="Budget" min="0" placeholder="Ex : 500">
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment-dots"></i> Décrivez votre projet *</label>
+                            <textarea id="message" name="Message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;"><span id="btn-text">Envoyer la demande</span> <span id="btn-loader" style="display:none;"><i class="fas fa-spinner fa-spin"></i></span></button>
+                        <div id="confirmation-message" style="display:none;margin-top:1.5rem;color:var(--success,green);font-weight:bold;text-align:center;">
+                            Merci pour votre demande ! Nous vous répondrons sous 24h.<br>
+                            Pour toute urgence, contactez-nous à <a href="mailto:kouroumaelisee@gmail.com">kouroumaelisee@gmail.com</a>.
+                        </div>
+                    </form>
+                    <p style="margin-top:1.5rem;text-align:center;font-size:0.97rem;color:#6B7280;">
+                        En soumettant ce formulaire, vous acceptez notre <a href="#" target="_blank" style="color:#2563EB;text-decoration:underline;">politique de confidentialité</a> et la gestion de vos données personnelles.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>DigitalSolutions</h3>
+                    <p>Votre partenaire en transformation numérique. Des solutions sur mesure pour faire grandir votre entreprise.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html#services">Développement web</a></li>
+                        <li><a href="index.html#services">Applications mobiles</a></li>
+                        <li><a href="index.html#services">Design graphique</a></li>
+                        <li><a href="index.html#services">Solutions transport</a></li>
+                        <li><a href="index.html#services">Automatisation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +212 710898565</li>
+                        <li><i class="fas fa-envelope"></i> kouroumaelisee@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rue du Commerce, Conakry, Guinée</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Réseaux sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/18wUY3nLes/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/212710898565" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/Eliseekourouma" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://www.linkedin.com/in/nema-elis%C3%A9e-kourouma-b5a558242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/kouroumaelisee" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/excellencekourouma?igsh=bGdjY2cybjM4N2hi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyright-footer"></p>
+                <div class="footer-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+// Service descriptions dynamiques
+const serviceDesc = document.getElementById('service-desc');
+const serviceSelect = document.getElementById('service');
+const descriptions = {
+    mobile: "Développement d'applications mobiles sur mesure pour Android et iOS.",
+    automation: "Automatisation de tâches et création de mini-logiciels pour gagner du temps.",
+    design: "Création de logos, flyers, cartes de visite, identité visuelle.",
+    formation: "Formations en trading, crypto-monnaies, analyse technique et gestion des risques.",
+    informatique: "Vente, achat, réparation et maintenance d'ordinateurs.",
+    web: "Création de sites web vitrines, e-commerce, blogs, etc.",
+    logistics: "Solutions logistiques, suivi de marchandises, automatisation des processus.",
+    transport: "Plateformes de réservation, gestion de flotte, interfaces chauffeurs/clients.",
+    digital: "Audit, accompagnement et transformation numérique de votre entreprise.",
+    voyage: "Accompagnement pour études et tourisme en Europe, Afrique, Asie."
+};
+serviceSelect.addEventListener('change', function() {
+    serviceDesc.textContent = descriptions[this.value] || '';
+});
+// Validation couleurs
+const inputs = document.querySelectorAll('#devisForm input, #devisForm textarea, #devisForm select');
+inputs.forEach(input => {
+    input.addEventListener('blur', function() {
+        if (this.checkValidity()) {
+            this.style.borderColor = '#10B981'; // vert
+        } else {
+            this.style.borderColor = '#EF4444'; // rouge
+        }
+    });
+    input.addEventListener('input', function() {
+        this.style.borderColor = '';
+    });
+});
+// Animation de chargement et confirmation
+const form = document.getElementById('devisForm');
+const btnText = document.getElementById('btn-text');
+const btnLoader = document.getElementById('btn-loader');
+const confirmation = document.getElementById('confirmation-message');
+form.addEventListener('submit', function(e) {
+    btnText.style.display = 'none';
+    btnLoader.style.display = 'inline-block';
+    // Laisser Formspree gérer la soumission, mais afficher le message après redirection
+    setTimeout(() => {
+        confirmation.style.display = 'block';
+    }, 2000);
+});
+</script>
+</body>
+</html> 

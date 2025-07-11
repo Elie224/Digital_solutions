@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solutions digitales sur mesure : création de sites web, applications mobiles, design graphique et automatisation pour entreprises">
+    <meta name="keywords" content="digital, solutions, site web, application mobile, design graphique, automatisation, transformation numérique, entreprise, startup, Guinée">
+    <meta name="robots" content="index, follow">
+    <title>Digital Solutions | Transformation numérique pour entreprises</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Digital Solutions – Transformation numérique, web, design, transport, automatisation, logistique">
+    <meta property="og:description" content="Votre partenaire en transformation numérique. Sites web, design, transport, automatisation, logistique en Guinée.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-site.com/">
+    <meta property="og:image" content="https://votre-site.com/image/IA.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Digital Solutions – Transformation numérique, web, design, transport, automatisation, logistique">
+    <meta name="twitter:description" content="Votre partenaire en transformation numérique. Sites web, design, transport, automatisation, logistique en Guinée.">
+    <meta name="twitter:image" content="https://votre-site.com/image/IA.jpg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <!-- Barre de navigation -->
+    <header class="header" role="banner">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Accueil Digital Solutions">
+                <img src="Logo.jpeg" alt="Digital Solutions Logo">
+                <span style="font-size:2rem;font-weight:700;font-family:Poppins,Arial,sans-serif;letter-spacing:1px;text-shadow:0 2px 8px rgba(37,99,235,0.08);line-height:1;margin:0;padding:0;">
+                  <span style="color:#222 !important;">Digital</span> <span style="color:#2563EB !important;">Solutions</span>
+                </span>
+            </a>
+            <nav class="navbar" role="navigation" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="#home" aria-label="Accueil">Accueil</a></li>
+                    <li><a href="#services" aria-label="Services">Services</a></li>
+                    <li><a href="#about" aria-label="À propos">À propos</a></li>
+                    <li><a href="realisations.html" aria-label="Réalisations">Réalisations</a></li>
+                    <li><a href="equipe.html" aria-label="Équipe">Équipe</a></li>
+                    <li><a href="partenaires.html" aria-label="Partenaires">Partenaires</a></li>
+                    <li><a href="#footer" aria-label="Contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="devis.html" class="btn btn-primary" aria-label="Demander un devis gratuit">Devis gratuit</a>
+                    <button class="dark-toggle" aria-label="Activer ou désactiver le mode sombre"><i class="fas fa-moon" aria-hidden="true"></i></button>
+                </div>
+            </nav>
+            <div class="menu-toggle" aria-label="Ouvrir ou fermer le menu" tabindex="0" role="button">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Section Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transformez votre entreprise avec des solutions numériques sur mesure</h1>
+                <p class="hero-subtitle">Développement web, applications mobiles, design graphique et automatisation pour booster votre business</p>
+                <div class="hero-buttons">
+                    <a href="devis.html" class="btn btn-primary">Demandez un devis</a>
+                    <a href="#services" class="btn btn-secondary">Nos services <i class="fas fa-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="IA.jpg" alt="Solutions digitales pour entreprises" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Services</h2>
+                <p>Nous offrons une gamme complète de services pour votre transformation numérique</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <img src="site_et_app.jpg" alt="Développement web et applications mobiles" loading="lazy">
+                    <h3>Création de sites web & apps mobiles</h3>
+                    <ul>
+                        <li>Sites vitrines professionnels</li>
+                        <li>Boutiques e-commerce</li>
+                        <li>Applications mobiles sur mesure</li>
+                        <li>Fonctionnalités spécifiques</li>
+                    </ul>
+                    <a href="service-web.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+                <!-- Service Informatique -->
+                <div class="service-card">
+                    <img src="auto.jpeg" alt="Vente, achat et réparation d'ordinateurs" loading="lazy">
+                    <h3>Service Informatique</h3>
+                    <ul>
+                        <li>Vente d'ordinateurs</li>
+                        <li>Achat d'ordinateurs</li>
+                        <li>Réparation d'ordinateurs</li>
+                    </ul>
+                    <a href="service-informatique.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+                <!-- Service Formation Trading & Crypto -->
+                <div class="service-card">
+                    <img src="IA.jpg" alt="Formation trading et crypto" loading="lazy">
+                    <h3>Formation Trading & Crypto</h3>
+                    <ul>
+                        <li>Initiation au trading</li>
+                        <li>Comprendre la crypto-monnaie</li>
+                        <li>Stratégies d'investissement</li>
+                        <li>Gestion des risques</li>
+                    </ul>
+                    <a href="service-formation.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+                <!-- Service Voyages & Séjours -->
+                <div class="service-card">
+                    <img src="livraison.png" alt="Voyages et séjours" loading="lazy">
+                    <h3>Voyages & Séjours</h3>
+                    <ul>
+                        <li>Voyages d'études en Europe, Afrique, Asie</li>
+                        <li>Séjours touristiques personnalisés</li>
+                        <li>Accompagnement administratif</li>
+                        <li>Conseils et sécurité</li>
+                    </ul>
+                    <a href="service-voyage.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <img src="taxi.jpg" alt="Solutions de transport digitalisées" loading="lazy">
+                    <h3>Solutions de transport</h3>
+                    <ul>
+                        <li>Plateformes de réservation</li>
+                        <li>Gestion de flotte automobile</li>
+                        <li>Interfaces chauffeurs/clients</li>
+                        <li>Suivi en temps réel</li>
+                    </ul>
+                    <a href="service-transport.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <img src="design.jpeg" alt="Design graphique professionnel" loading="lazy">
+                    <h3>Design graphique</h3>
+                    <ul>
+                        <li>Logos professionnels</li>
+                        <li>Flyers & cartes de visite</li>
+                        <li>Affiches & bannières</li>
+                        <li>Identité visuelle complète</li>
+                    </ul>
+                    <a href="service-design.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <img src="digital.jpeg" alt="Transformation numérique" loading="lazy">
+                    <h3>Transformation numérique</h3>
+                    <ul>
+                        <li>Audit des pratiques</li>
+                        <li>Solutions numériques adaptées</li>
+                        <li>Formation aux outils</li>
+                        <li>Accompagnement complet</li>
+                    </ul>
+                    <a href="service-digital.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <img src="auto.jpeg" alt="Automatisation des tâches" loading="lazy">
+                    <h3>Automatisation des tâches</h3>
+                    <ul>
+                        <li>Formulaires automatisés</li>
+                        <li>Mini-logiciels internes</li>
+                        <li>Chatbots clients</li>
+                        <li>Connexion d'outils</li>
+                    </ul>
+                    <a href="service-automation.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <img src="Solutions_logistiques.png" alt="Solutions logistiques" loading="lazy">
+                    <h3>Solutions logistiques</h3>
+                    <ul>
+                        <li>Gestion logistique</li>
+                        <li>Suivi des marchandises</li>
+                        <li>Codes-barres & QR codes</li>
+                        <li>Automatisation des processus</li>
+                    </ul>
+                    <a href="service-logistics.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="equipe.png" alt="Notre équipe Digital Solutions" loading="lazy">
+            </div>
+            <div class="about-content">
+                <h2>Qui sommes-nous ?</h2>
+                <p>Digital Solutions est une startup spécialisée dans la transformation numérique des entreprises. Notre mission est d'accompagner les professionnels dans leur transition vers le digital avec des solutions sur mesure, simples et efficaces.</p>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="150">0</span>+
+                        <span class="stat-text">Clients satisfaits</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="300">0</span>+
+                        <span class="stat-text">Projets réalisés</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="20">0</span>+
+                        <span class="stat-text">Experts</span>
+                    </div>
+                </div>
+                
+                <a href="#footer" class="btn btn-primary">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Réalisations</h2>
+                <p>Découvrez quelques-uns de nos projets récents</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="transport">Transport</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Projet 1 -->
+                <div class="portfolio-item" data-category="web">
+                    <img src="ecole.png" alt="Site web école privée - Digital Solutions" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Plateforme école privée</h3>
+                        <p>Espace parent/élève sécurisé</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <img src="livraison.png" alt="Application de livraison - Digital Solutions" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Application de livraison</h3>
+                        <p>Avec suivi en temps réel</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="portfolio-item" data-category="design">
+                    <img src="support_design.png" alt="Identité visuelle salon - Digital Solutions" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Identité visuelle salon</h3>
+                        <p>Logo & supports de communication</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Projet 4 -->
+                <div class="portfolio-item" data-category="transport">
+                    <img src="application_de_transport.jpeg" alt="Plateforme de transport - Digital Solutions" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Plateforme de transport</h3>
+                        <p>Réservation de trajets interurbains</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Projet 5 -->
+                <div class="portfolio-item" data-category="web">
+                    <img src="Boutique_en_ligne_cosmétiques.jpg" alt="Boutique en ligne - Digital Solutions" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Boutique en ligne</h3>
+                        <p>Produits cosmétiques artisanaux</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Projet 6 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <img src="application_de_gestion.jpeg" alt="Application de gestion - Digital Solutions" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Application de gestion</h3>
+                        <p>Suivi des stocks et inventaire</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <a href="#contact" class="btn btn-primary">Votre projet ici ?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ils nous font confiance</h2>
+                <p>Ce que nos clients disent de nous</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <!-- Témoignage 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon" style="font-size:2.2rem;color:#2563EB;text-align:center;margin-bottom:0.3rem;"><i class="fas fa-user"></i></div>
+                        <div class="testimonial-author" style="text-align:center;margin-bottom:0.7rem;">
+                            <h4 style="margin-bottom:0.2rem;">Moussa Konaté</h4>
+                            <span style="font-size:0.98rem;color:#555;">Directeur, Transports Konaté</span>
+                        </div>
+                        <p class="testimonial-text">"Digital Solutions a transformé notre façon de travailler. Leur plateforme de gestion de flotte nous a fait gagner un temps précieux et réduit nos coûts opérationnels."</p>
+                        <div class="testimonial-rating" style="margin-bottom:0.7rem;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon" style="font-size:2.2rem;color:#E91E63;text-align:center;margin-bottom:0.3rem;"><i class="fas fa-user"></i></div>
+                        <div class="testimonial-author" style="text-align:center;margin-bottom:0.7rem;">
+                            <h4 style="margin-bottom:0.2rem;">Aïssata Diallo</h4>
+                            <span style="font-size:0.98rem;color:#555;">Gérante, Beauté Naturelle</span>
+                        </div>
+                        <p class="testimonial-text">"Notre nouvelle application mobile a augmenté nos ventes de 40% en 3 mois. L'équipe a parfaitement compris nos besoins et a livré un produit de qualité."</p>
+                        <div class="testimonial-rating" style="margin-bottom:0.7rem;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon" style="font-size:2.2rem;color:#E91E63;text-align:center;margin-bottom:0.3rem;"><i class="fas fa-user-md"></i></div>
+                        <div class="testimonial-author" style="text-align:center;margin-bottom:0.7rem;">
+                            <h4 style="margin-bottom:0.2rem;">Dr. Fatoumata Bamba</h4>
+                            <span style="font-size:0.98rem;color:#555;">Médecin, Polyclinique du Plateau</span>
+                        </div>
+                        <p class="testimonial-text">"La digitalisation de notre cabinet médical avec Digital Solutions a révolutionné notre relation avec les patients. Plus d'organisation, moins de paperasse."</p>
+                        <div class="testimonial-rating" style="margin-bottom:0.7rem;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Foire aux questions</h2>
+                <p>Vous avez une question ? Consultez notre FAQ ou contactez-nous directement.</p>
+                        </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Quels types de projets réalisez-vous ?</button>
+                    <div class="faq-answer">Nous réalisons des sites web, applications mobiles, solutions de design graphique, automatisation, plateformes de transport et plus encore.</div>
+                    </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Comment obtenir un devis personnalisé ?</button>
+                    <div class="faq-answer">Remplissez le formulaire de contact ou cliquez sur "Devis gratuit" en haut de la page. Nous vous répondrons rapidement.</div>
+                        </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Proposez-vous un accompagnement après livraison ?</button>
+                    <div class="faq-answer">Oui, nous assurons un suivi, la maintenance et la formation pour garantir la réussite de votre projet.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Vos solutions sont-elles adaptées aux PME ?</button>
+                    <div class="faq-answer">Absolument, nous adaptons nos offres à la taille et aux besoins de chaque entreprise, de la startup à la grande société.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suppression complète de la section contact -->
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>DigitalSolutions</h3>
+                    <p>Votre partenaire en transformation numérique. Des solutions sur mesure pour faire grandir votre entreprise.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Développement web</a></li>
+                        <li><a href="#">Applications mobiles</a></li>
+                        <li><a href="#">Design graphique</a></li>
+                        <li><a href="#">Solutions transport</a></li>
+                        <li><a href="#">Automatisation</a></li>
+                        <li><a href="service-informatique.html">Informatique</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i>+212 710898565</li>
+                        <li><i class="fas fa-envelope"></i> kouroumaelisee@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rue du Commerce, Conakry, Guinée</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Réseaux sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/18wUY3nLes/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/212710898565" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/Eliseekourouma" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://www.linkedin.com/in/nema-elis%C3%A9e-kourouma-b5a558242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/kouroumaelisee" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/excellencekourouma?igsh=bGdjY2cybjM4N2hi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p id="copyright-footer"></p>
+                <div class="footer-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Chatbot -->
+    <div class="chatbot-toggle" aria-label="Ouvrir le chatbot" tabindex="0" role="button">
+        <i class="fas fa-comment-dots" aria-hidden="true"></i>
+    </div>
+    
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h4>Assistant Digital</h4>
+            <button class="chatbot-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="chatbot-message bot">
+                <p>Bonjour ! Comment puis-je vous aider aujourd'hui ?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Tapez votre message...">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Copyright dynamique
+        const copyright = document.getElementById('copyright-footer');
+        const year = new Date().getFullYear();
+        copyright.innerHTML = `© ${year} Digital Solutions. Tous droits réservés.`;
+    </script>
+</body>
+</html>

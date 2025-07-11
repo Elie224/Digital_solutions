@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez nos réalisations : sites web, applications mobiles, design graphique et solutions digitales sur mesure.">
+    <title>Nos Réalisations | Digital Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Accueil Digital Solutions">
+                <img src="Logo.jpeg" alt="Digital Solutions Logo">
+                <span style="font-size:2rem;font-weight:700;font-family:Poppins,Arial,sans-serif;letter-spacing:1px;text-shadow:0 2px 8px rgba(37,99,235,0.08);line-height:1;margin:0;padding:0;">
+                  <span style="color:#222 !important;">Digital</span> <span style="color:#2563EB !important;">Solutions</span>
+                </span>
+            </a>
+            <nav class="navbar" role="navigation" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Accueil</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                    <li><a href="partenaires.html">Partenaires</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">Devis gratuit</a>
+                </div>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero service-hero fade-in">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="service-icon-large"><i class="fas fa-trophy"></i></span>
+                    <h1>Nos Réalisations</h1>
+                    <p class="hero-subtitle">Découvrez nos projets récents et laissez-vous inspirer par nos solutions digitales sur mesure.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-detailed fade-in">
+            <div class="container">
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                    <button class="filter-btn" data-filter="web">Sites web</button>
+                    <button class="filter-btn" data-filter="mobile">Applications mobiles</button>
+                    <button class="filter-btn" data-filter="design">Design graphique</button>
+                    <button class="filter-btn" data-filter="transport">Transport</button>
+                    <button class="filter-btn" data-filter="automation">Automatisation</button>
+                </div>
+
+                <div class="portfolio-detailed-grid">
+                    <!-- Projet 1 - Site web école -->
+                    <div class="portfolio-detailed-card" data-category="web">
+                        <div class="portfolio-detailed-image">
+                            <img src="New-Project.jpg" alt="Plateforme école privée" loading="lazy">
+                            <div class="portfolio-detailed-overlay">
+                                <span class="project-category">Site web</span>
+                                <span class="project-duration">3 mois</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-detailed-content">
+                            <h3>Plateforme école privée</h3>
+                            <p class="project-description">Espace parent/élève sécurisé avec gestion des notes, emplois du temps, communication et paiements en ligne.</p>
+                            <div class="project-details">
+                                <div class="project-tech">
+                                    <h4>Technologies :</h4>
+                                    <span>React, Node.js, MongoDB, Stripe</span>
+                                </div>
+                                <div class="project-features">
+                                    <h4>Fonctionnalités :</h4>
+                                    <ul>
+                                        <li>Espace sécurisé parents/élèves</li>
+                                        <li>Gestion des notes et bulletins</li>
+                                        <li>Emplois du temps interactif</li>
+                                        <li>Paiements en ligne</li>
+                                        <li>Communication interne</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-testimonial">
+                                <p>"Digital Solutions a créé une plateforme parfaite pour notre école. Les parents sont ravis de pouvoir suivre la scolarité de leurs enfants en temps réel."</p>
+                                <span class="testimonial-author">- Directeur, École Privée Excellence</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">Voir le projet</a>
+                                <a href="index.html#contact" class="btn btn-outline">Projet similaire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 - App livraison -->
+                    <div class="portfolio-detailed-card" data-category="mobile">
+                        <div class="portfolio-detailed-image">
+                            <img src="photo.png" alt="Application de livraison" loading="lazy">
+                            <div class="portfolio-detailed-overlay">
+                                <span class="project-category">Application mobile</span>
+                                <span class="project-duration">4 mois</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-detailed-content">
+                            <h3>Application de livraison</h3>
+                            <p class="project-description">Application mobile complète avec suivi GPS en temps réel, notifications push et système de paiement intégré.</p>
+                            <div class="project-details">
+                                <div class="project-tech">
+                                    <h4>Technologies :</h4>
+                                    <span>React Native, Firebase, Google Maps API</span>
+                                </div>
+                                <div class="project-features">
+                                    <h4>Fonctionnalités :</h4>
+                                    <ul>
+                                        <li>Suivi GPS en temps réel</li>
+                                        <li>Notifications push</li>
+                                        <li>Paiement mobile</li>
+                                        <li>Historique des commandes</li>
+                                        <li>Évaluation et commentaires</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-testimonial">
+                                <p>"Notre application de livraison a révolutionné notre business. Les clients adorent le suivi en temps réel !"</p>
+                                <span class="testimonial-author">- Gérant, Express Livraison</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">Voir le projet</a>
+                                <a href="index.html#contact" class="btn btn-outline">Projet similaire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 - Design identité visuelle -->
+                    <div class="portfolio-detailed-card" data-category="design">
+                        <div class="portfolio-detailed-image">
+                            <img src="real-conception-subtilcoiff-02.png" alt="Identité visuelle salon" loading="lazy">
+                            <div class="portfolio-detailed-overlay">
+                                <span class="project-category">Design graphique</span>
+                                <span class="project-duration">2 mois</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-detailed-content">
+                            <h3>Identité visuelle salon de beauté</h3>
+                            <p class="project-description">Création complète de l'identité visuelle : logo, charte graphique, supports de communication et présence digitale.</p>
+                            <div class="project-details">
+                                <div class="project-tech">
+                                    <h4>Outils :</h4>
+                                    <span>Adobe Creative Suite, Figma, Canva</span>
+                                </div>
+                                <div class="project-features">
+                                    <h4>Livrables :</h4>
+                                    <ul>
+                                        <li>Logo et variations</li>
+                                        <li>Charte graphique complète</li>
+                                        <li>Supports print (cartes, flyers)</li>
+                                        <li>Réseaux sociaux</li>
+                                        <li>Site web vitrine</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-testimonial">
+                                <p>"L'identité visuelle créée par Digital Solutions a donné un vrai coup de jeune à notre salon. Nos clients adorent !"</p>
+                                <span class="testimonial-author">- Propriétaire, Salon Beauté Naturelle</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">Voir le projet</a>
+                                <a href="index.html#contact" class="btn btn-outline">Projet similaire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4 - Plateforme transport -->
+                    <div class="portfolio-detailed-card" data-category="transport">
+                        <div class="portfolio-detailed-image">
+                            <img src="intouro-trailer-2020-en.jpg" alt="Plateforme de transport" loading="lazy">
+                            <div class="portfolio-detailed-overlay">
+                                <span class="project-category">Transport</span>
+                                <span class="project-duration">6 mois</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-detailed-content">
+                            <h3>Plateforme de transport interurbain</h3>
+                            <p class="project-description">Plateforme complète de réservation de trajets avec gestion de flotte, suivi GPS et interface chauffeur.</p>
+                            <div class="project-details">
+                                <div class="project-tech">
+                                    <h4>Technologies :</h4>
+                                    <span>Vue.js, Laravel, MySQL, WebSockets</span>
+                                </div>
+                                <div class="project-features">
+                                    <h4>Fonctionnalités :</h4>
+                                    <ul>
+                                        <li>Réservation en ligne</li>
+                                        <li>Gestion de flotte</li>
+                                        <li>Suivi GPS temps réel</li>
+                                        <li>Interface chauffeur</li>
+                                        <li>Paiements sécurisés</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-testimonial">
+                                <p>"Digital Solutions a transformé notre façon de travailler. La plateforme nous fait gagner un temps précieux."</p>
+                                <span class="testimonial-author">- Directeur, Transports Konaté</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">Voir le projet</a>
+                                <a href="index.html#contact" class="btn btn-outline">Projet similaire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5 - E-commerce -->
+                    <div class="portfolio-detailed-card" data-category="web">
+                        <div class="portfolio-detailed-image">
+                            <img src="Boutique_en_ligne_cosmétiques.jpg" alt="Boutique en ligne" loading="lazy">
+                            <div class="portfolio-detailed-overlay">
+                                <span class="project-category">E-commerce</span>
+                                <span class="project-duration">4 mois</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-detailed-content">
+                            <h3>Boutique en ligne cosmétiques</h3>
+                            <p class="project-description">Site e-commerce complet pour produits cosmétiques artisanaux avec gestion des stocks et paiements.</p>
+                            <div class="project-details">
+                                <div class="project-tech">
+                                    <h4>Technologies :</h4>
+                                    <span>WordPress, WooCommerce, Stripe</span>
+                                </div>
+                                <div class="project-features">
+                                    <h4>Fonctionnalités :</h4>
+                                    <ul>
+                                        <li>Catalogue produits</li>
+                                        <li>Panier et commandes</li>
+                                        <li>Gestion des stocks</li>
+                                        <li>Paiements sécurisés</li>
+                                        <li>Blog et SEO</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-testimonial">
+                                <p>"Nos ventes ont augmenté de 40% grâce à notre nouvelle boutique en ligne !"</p>
+                                <span class="testimonial-author">- Gérante, Beauté Naturelle</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">Voir le projet</a>
+                                <a href="index.html#contact" class="btn btn-outline">Projet similaire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 6 - App gestion -->
+                    <div class="portfolio-detailed-card" data-category="automation">
+                        <div class="portfolio-detailed-image">
+                            <img src="gestion_1.png" alt="Application de gestion" loading="lazy">
+                            <div class="portfolio-detailed-overlay">
+                                <span class="project-category">Automatisation</span>
+                                <span class="project-duration">3 mois</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-detailed-content">
+                            <h3>Application de gestion d'inventaire</h3>
+                            <p class="project-description">Application mobile pour le suivi des stocks, inventaire et gestion des fournisseurs.</p>
+                            <div class="project-details">
+                                <div class="project-tech">
+                                    <h4>Technologies :</h4>
+                                    <span>Flutter, Firebase, QR Codes</span>
+                                </div>
+                                <div class="project-features">
+                                    <h4>Fonctionnalités :</h4>
+                                    <ul>
+                                        <li>Scan QR codes</li>
+                                        <li>Gestion des stocks</li>
+                                        <li>Alertes automatiques</li>
+                                        <li>Rapports et statistiques</li>
+                                        <li>Gestion fournisseurs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-testimonial">
+                                <p>"L'application nous a permis d'optimiser notre gestion d'inventaire et de réduire nos pertes de 60%."</p>
+                                <span class="testimonial-author">- Gérant, Magasin Général</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">Voir le projet</a>
+                                <a href="index.html#contact" class="btn btn-outline">Projet similaire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section fade-in">
+            <div class="container">
+                <h2>Votre projet ici ?</h2>
+                <p>Inspiré par nos réalisations ? Parlons de votre projet et créons ensemble quelque chose d'extraordinaire.</p>
+                <a href="index.html#contact" class="btn btn-primary">Démarrer votre projet</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>DigitalSolutions</h3>
+                    <p>Votre partenaire en transformation numérique. Des solutions sur mesure pour faire grandir votre entreprise.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html#services">Développement web</a></li>
+                        <li><a href="index.html#services">Applications mobiles</a></li>
+                        <li><a href="index.html#services">Design graphique</a></li>
+                        <li><a href="index.html#services">Solutions transport</a></li>
+                        <li><a href="index.html#services">Automatisation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +212 710898565</li>
+                        <li><i class="fas fa-envelope"></i> kouroumaelisee@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rue du Commerce, Conakry, Guinée</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Réseaux sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/18wUY3nLes/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/212710898565" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/Eliseekourouma" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://www.linkedin.com/in/nema-elis%C3%A9e-kourouma-b5a558242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/kouroumaelisee" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/excellencekourouma?igsh=bGdjY2cybjM4N2hi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyright-footer"></p>
+                <div class="footer-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Copyright dynamique
+        const copyright = document.getElementById('copyright-footer');
+        const year = new Date().getFullYear();
+        copyright.innerHTML = `© ${year} Digital Solutions. Tous droits réservés.`;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
